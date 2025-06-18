@@ -1,0 +1,16 @@
+.slot {
+    font-size: 4rem;
+    margin: 0 1rem;
+    transition: transform 0.5s;
+  }
+  
+  .spin {
+    animation: spin 0.5s ease-in-out;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotateX(0); }
+    50% { transform: rotateX(180deg); }
+    100% { transform: rotateX(360deg); }
+  }
+  
