@@ -3,8 +3,14 @@ import SlotMachine from './components/SlotMachine';
 
 function App() {
   return (
-    <div className="App">
-      <h1 style={{ textAlign: 'center' }}>🎰 React Slot Machine</h1>
+    <div className="App" style={{
+      backgroundColor: '#111',
+      color: 'white',
+      minHeight: '100vh',
+      padding: '2rem',
+      fontFamily: 'Arial, sans-serif'
+    }}>
+      <h1 style={{ textAlign: 'center', fontSize: '3rem' }}>🎰 Slot Machine Game</h1>
       <SlotMachine />
     </div>
   );

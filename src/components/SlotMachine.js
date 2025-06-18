@@ -46,9 +46,23 @@ export default function SlotMachine() {
           <Slot key={index} symbol={symbol} isSpinning={isSpinning} />
         ))}
       </div>
-      <button onClick={spin} style={{ marginTop: '20px', fontSize: '1.5rem' }}>
-        Spin
-      </button>
+      <button
+  onClick={spin}
+  style={{
+    marginTop: '20px',
+    fontSize: '1.5rem',
+    padding: '10px 20px',
+    borderRadius: '8px',
+    border: 'none',
+    backgroundColor: '#ff4081',
+    color: 'white',
+    cursor: 'pointer',
+    boxShadow: '0 0 10px #ff4081'
+  }}
+>
+  Spin
+</button>
+
       <p>{message}</p>
     </div>
   );
